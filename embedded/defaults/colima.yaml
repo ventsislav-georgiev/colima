@@ -60,7 +60,7 @@ network:
   #   - slirp is the default user mode networking provided by Qemu
   #   - gvproxy is an alternative to VPNKit based on gVisor https://github.com/containers/gvisor-tap-vsock
   # Default: slirp
-  driver: slirp
+  driver: gvproxy
 
 # ===================================================================== #
 # ADVANCED CONFIGURATION
@@ -98,7 +98,7 @@ docker: {}
 # of concurrent reads or writes.
 #
 # Default: sshfs
-mountType: sshfs
+mountType: 9p
 
 # The CPU type for the virtual machine.
 # Options available for host emulation can be checked with: `qemu-system-$(arch) -cpu help`.

@@ -89,12 +89,12 @@ Run 'colima template' to set the default configurations or 'colima start --edit'
 }
 
 const (
-	defaultCPU               = 2
-	defaultMemory            = 2
-	defaultDisk              = 60
+	defaultCPU               = 8
+	defaultMemory            = 14
+	defaultDisk              = 200
 	defaultKubernetesVersion = kubernetes.DefaultVersion
-	defaultMountType         = "sshfs"
-	defaultNetworkDriver     = "slirp"
+	defaultMountType         = "9p"
+	defaultNetworkDriver     = "gvproxy"
 )
 
 var startCmdArgs struct {
